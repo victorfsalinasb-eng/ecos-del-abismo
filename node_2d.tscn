@@ -1,3 +1,18 @@
 [gd_scene format=3 uid="uid://b67hayvsqqiw6"]
 
+[ext_resource type="Script" uid="uid://bl55e8o8eo0cj" path="res://node_2d.gd" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://e7n02hhcar74" path="res://assets/sprites/protagonista.png" id="2_epypp"]
+
 [node name="Node2D" type="Node2D" unique_id=1531201397]
+script = ExtResource("1_0e48y")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1905139497]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1223296636]
+position = Vector2(-4.828389, 0)
+scale = Vector2(0.8960636, 1)
+texture = ExtResource("2_epypp")
+hframes = 3
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1383493138]
